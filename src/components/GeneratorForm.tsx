@@ -6,9 +6,9 @@ import { cn } from '../lib/utils';
 
 // Daftar sekolah yang diperbolehkan sebagai kunci keamanan
 const ALLOWED_SCHOOLS = [
-  "SD Negeri 1 Merdeka",
-  "SD NEGERI 1 MERDEKA",
-  "SDN 1 MERDEKA"
+  "SD Negeri Kajulangko",
+  "SD NEGERI KAJULANGKO",
+  "SDN KAJULANGKO"
 ];
 
 interface GeneratorFormProps {
@@ -173,7 +173,7 @@ export default function GeneratorForm({ onSubmit, isLoading, savedData, onViewPr
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="space-y-2">
             <label className={labelClass}><School className="w-4 h-4"/> Nama Satuan Pendidikan</label>
-            <input name="schoolName" value={formData.schoolName} onChange={handleChange} required className={inputClass} placeholder="Contoh: SD Negeri 1 Merdeka" />
+            <input name="schoolName" value={formData.schoolName} onChange={handleChange} required className={inputClass} placeholder="Contoh: SD Negeri Kajulangko" />
           </div>
           <div className="space-y-2">
             <label className={labelClass}><UserIcon className="w-4 h-4"/> Nama Guru</label>
